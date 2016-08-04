@@ -1,0 +1,4 @@
+<template>
+    This is Question #<code>${params.questionId}</code>.
+    <a href.bind="mapper.generate('users/profile', { userId: params.questionId })">Take me to User <code>${params.questionId}</code> profile!</a>
+</template>

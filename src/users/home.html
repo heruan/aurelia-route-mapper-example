@@ -1,0 +1,8 @@
+<template>
+    This is the User App home. Choose a user!
+    <ul>
+        <li repeat.for="userId of users">
+            <a href.bind="mapper.generate('users/profile', { userId: userId })">See profile of User <code>${userId}</code></a>
+        </li>
+    </ul>
+</template>

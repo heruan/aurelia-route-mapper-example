@@ -1,0 +1,8 @@
+<template>
+    This is the Questions App home. Choose a question!
+    <ul>
+        <li repeat.for="questionId of questions">
+            <a href.bind="mapper.generate('questions/card', { questionId: questionId })">See Question #<code>${questionId}</code></a>
+        </li>
+    </ul>
+</template>

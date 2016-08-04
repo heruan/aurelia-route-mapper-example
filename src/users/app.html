@@ -1,0 +1,11 @@
+<template>
+    <p>
+        Hello, I'm the Users Application and these are my routes:
+    </p>
+    <ul>
+        <li repeat.for="route of router.navigation">
+            <a href.bind="route.href">${route.title}</a>
+        </li>
+    </ul>
+    <router-view></router-view>
+</template>
